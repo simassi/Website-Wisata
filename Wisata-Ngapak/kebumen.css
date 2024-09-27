@@ -1,0 +1,179 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /*background-color: white;*/
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .jdl_kbm {
+    color: white;
+    margin-top: 140px;
+    margin-left: 520px;
+    position: absolute;
+  }
+  
+  .jdl_wisata {
+    color: black;
+    border: 10px;
+  }
+  
+  .p_wisata {
+    color: black;
+    margin-top: 10px;
+  }
+  
+  .c_wisata {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+  
+  .text_container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+  }
+  
+  .p_kbm {
+    margin-top: 340px;
+    position: absolute;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: white;
+  }
+  
+  .kbm_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 0px;
+    object-fit: cover;
+  }
+  
+  .m_img {
+    margin-top: 50px;
+    margin-left: 50px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    background-color: black;
+  }
+  
+  .btn_wisata {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(88, 103, 160);;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .btn_wisata:hover {
+    background-color: rgba(26, 0, 119, 0.717)et;
+  }
+  
+  .navbar {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav-items li {
+    position: relative;
+  }
+  
+  .nav-items li a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+    border-radius: 8px; /* Adds rounded corners */
+  }
+  
+  .dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 8px; /* Adds rounded corners */
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+    border-radius: 8px; /* Adds rounded corners */
+  }
+  
+  .nav-items li a:hover,
+  .dropdown:hover .dropbtn {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px; /* Keeps rounded corners on hover */
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px; /* Keeps rounded corners on hover */
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  
+  .search-container input[type="text"] {
+    padding: 6px;
+    margin-right: 10px;
+    font-size: 17px;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .search-container button {
+    padding: 6px 10px;
+    background: rgba(221, 221, 221, 0.9);
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+  }
+  
+  .search-container button:hover {
+    background: rgba(204, 204, 204, 0.9);
+    border-radius: 8px; /* Adds rounded corners on hover */
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+  }

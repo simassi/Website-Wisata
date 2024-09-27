@@ -1,0 +1,270 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .menganti_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 0px;
+    object-fit: cover;
+  }
+  
+  .h1_menganti {
+    text-align: center;
+  }
+  
+  .h1_menganti_lokasi {
+    margin-left: 10px;
+    margin-top: 0px;
+    text-align: left;
+  }
+  
+  .c_text_menganti {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .img_lok_menganti {
+    flex: 1;
+    max-width: 40%;
+  }
+  
+  .c_menganti {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .btn_menganti {
+    margin-left: 5px;
+    padding: 10px 20px;
+    background-color: rgb(88, 103, 160);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .btn_menganti:hover {
+    background-color: rgba(26, 0, 119, 0.717);
+  }
+  
+  .navbar {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav-items li {
+    position: relative;
+  }
+  
+  .nav-items li a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+    border-radius: 8px; /* Adds rounded corners */
+  }
+  
+  .dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 8px; /* Adds rounded corners */
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+    border-radius: 8px; /* Adds rounded corners */
+  }
+  
+  .nav-items li a:hover,
+  .dropdown:hover .dropbtn {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px; /* Keeps rounded corners on hover */
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px; /* Keeps rounded corners on hover */
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  
+  .search-container input[type="text"] {
+    padding: 6px;
+    margin-right: 10px;
+    font-size: 17px;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .search-container button {
+    padding: 6px 10px;
+    background: rgba(221, 221, 221, 0.9);
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+  }
+  
+  .search-container button:hover {
+    background: rgba(204, 204, 204, 0.9);
+    border-radius: 8px; /* Adds rounded corners on hover */
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+  }
+  
+  /*card makanan*/
+  /* Styles for the culinary card layout */
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .card-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 10px;
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+    min-width: 300px;
+    flex-shrink: 0;
+    text-align: center;
+  }
+  
+  .card img {
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .card-content h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+  }
+  
+  .card-content p {
+    color: #555;
+    font-size: 1em;
+    line-height: 1.5;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Styles for the reference photo and documentation card layout */
+  .ref-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ref-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .ref-card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .ref-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+    text-align: center;
+  }
+  
+  .ref-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .ref-card-content {
+    padding: 20px;
+  }
+  
+  .ref-card-content h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+  }
+  
+  .ref-card-content p {
+    color: #555;
+    font-size: 1em;
+    line-height: 1.5;
+  }
+  
+  .ref-card:hover {
+    transform: scale(1.05);
+  }
